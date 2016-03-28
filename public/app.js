@@ -48,11 +48,16 @@ window.onload = function(){
 
  var form =document.getElementById('quote-form');
  var addQuote =document.getElementById('quote-text-input');
+
  var quotes =document.getElementById('quote-list');
+
+ // var addAuthor =document.getElementById('quote-author-input');
+
 
  var handleClick = function(){
    var listOfQuotes = document.createElement('li');
    listOfQuotes.innerText = addQuote.value;
+   // listOfQuotes.innerText = addAuthor.value;
    quotes.appendChild(listOfQuotes);
   }
 
@@ -61,6 +66,13 @@ window.onload = function(){
 
     handleClick();
   }
+
+//show the quote being made in real time
+  // var inputBox = document.getElementById('quote-text-input');
+
+  // inputBox.onkeyup = function(){
+  //     document.getElementById('quote-text-input').innerHTML = inputBox.value;
+  // }
 
 
 
